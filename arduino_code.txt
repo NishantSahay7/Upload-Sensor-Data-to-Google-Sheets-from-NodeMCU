@@ -33,10 +33,10 @@ void setup()
 void loop()
 {
 
-  int a,b;
-    a=1;
+  int a,b;                       //a,b are variables to store sensor values
+    a=1;                         
     b=1;
-    sendData(a,b);
+    sendData(a,b);               //This function uploads data to Google Sheets
         
 }
 
