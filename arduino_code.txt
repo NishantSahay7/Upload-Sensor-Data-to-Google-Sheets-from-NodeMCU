@@ -45,6 +45,7 @@ void loop()
 
 void sendData(int x, int y)
 {
+  client.setInsecure();
   Serial.print("connecting to ");
   Serial.println(host);
   if (!client.connect(host, httpsPort)) {
